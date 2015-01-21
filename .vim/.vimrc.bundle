@@ -54,19 +54,35 @@ NeoBundle 'tomasr/molokai'                      " Colorscheme
 NeoBundle 'jeffreyiacono/vim-colors-wombat'     " Colorscheme
 NeoBundle 'w0ng/vim-hybrid'                     " Colorscheme
 
+"-------------------------
+" 主にPython用
+"-------------------------
 " Djangoを正しくVimで読み込めるようにする
-NeoBundleLazy "lambdalisue/vim-django-support", {
+NeoBundleLazy 'lambdalisue/vim-django-support', {
     \ "autoload": {
     \   "filetypes": ["python", "python3", "djangohtml"]
     \ }}
 " Vimで正しくvirtualenvを処理できるようにする
-NeoBundleLazy "jmcantrell/vim-virtualenv", {
+NeoBundleLazy 'jmcantrell/vim-virtualenv', {
     \ "autoload": {
     \   "filetypes": ["python", "python3", "djangohtml"]
     \ }}
-NeoBundleLazy "davidhalter/jedi-vim", {
+NeoBundleLazy 'davidhalter/jedi-vim', {
     \ "autoload": {
     \   "filetypes": ["python", "python3", "djangohtml"]
+    \ }}
+NeoBundleLazy 'hynek/vim-python-pep8-indent', {
+    \ "autoload": {
+    \   "insert": 1,
+    \   "filetypes": ["python", "python3", "djangohtml"]
+    \ }}
+
+"-------------------------
+" 主にHTML, CSS用
+"-------------------------
+NeoBundleLazy 'mattn/emmet-vim', {
+    \ "autoload": {
+    \   "filetypes": ["html", "css", "php"]
     \ }}
 
 call neobundle#end()

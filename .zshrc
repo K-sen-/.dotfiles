@@ -18,7 +18,7 @@ bindkey -e
 source /etc/zsh_command_not_found
 
 # ヒストリの設定
-HISTFILE=~/.dotfiles/zsh/.zsh_history
+HISTFILE=~/.dotfiles/.zsh/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
@@ -43,7 +43,7 @@ zstyle ':zle:*' word-style unspecified
 # 補完機能を有効にする
 fpath=(/usr/local/share/zsh-completions/src $fpath)
 autoload -Uz compinit
-compinit -d ~/.dotfiles/zsh/compdump
+compinit -d ~/.dotfiles/.zsh/compdump
 
 # 補完で小文字でも大文字にマッチさせる
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -133,8 +133,8 @@ alias mv='mv -i'
 
 alias mkdir='mkdir -p'
 
-alias vi='vim -u /home/aki/.dotfiles/.vimrc'
-alias vim='vim -u /home/aki/.dotfiles/.vimrc'
+alias vi='vim -u ~/.dotfiles/.vimrc'
+alias vim='vim -u ~/.dotfiles/.vimrc'
 alias nico='cd ~/Documents/niconico'
 
 # sudo の後のコマンドでエイリアスを有効にする
