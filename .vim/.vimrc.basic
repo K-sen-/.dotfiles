@@ -20,7 +20,6 @@ augroup END
 set t_Co=256        " VIMでのフルカラー使用
 set laststatus=2    " 常にステータスラインを表示
 set mouse=a         " 全モードでのマウス操作の有効化
-set iminsert=2      " インサートモードから抜けるとIME無効化
 
 " タブ／インデントの設定"
 set expandtab       " タブ入力を複数の空白入力に置き換える
