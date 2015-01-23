@@ -85,7 +85,7 @@ NeoBundleLazy 'mattn/emmet-vim', {
     \   "filetypes": ["html", "css", "php"]
     \ }}
 
-NeoBundleLazy 'taichouchou2/html5.vim', {
+NeoBundleLazy 'hail2u/vim-css-syntax', {
     \ "autoload": {
     \   "filetypes": ["html", "css", "php"]
     \ }}
@@ -93,9 +93,19 @@ NeoBundleLazy 'taichouchou2/html5.vim', {
 "-------------------------
 " 主にJavaScript用
 "-------------------------
-NeoBundleLazy 'taichouchou2/vim-javascript', {
+NeoBundleLazy 'mattn/jscomplete-vim', {
     \ "autoload": {
-    \   "filetypes": ["js", "php"]
+    \   "filetypes": ["javascript"]
+    \ }}
+
+NeoBundleLazy 'myhere/vim-nodejs-complete', {
+    \ "autoload": {
+    \   "filetypes": ["javascript"]
+    \ }}
+
+NeoBundleLazy 'jelera/vim-javascript-syntax', {
+    \ "autoload": {
+    \   "filetypes": ["javascript"]
     \ }}
 
 call neobundle#end()
