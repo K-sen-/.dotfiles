@@ -43,7 +43,7 @@ zstyle ':zle:*' word-style unspecified
 # 補完機能を有効にする
 fpath=(/usr/local/share/zsh-completions/src $fpath)
 autoload -Uz compinit
-compinit -d ~/.dotfiles/.zsh/compdump
+compinit -d ~/.dotfiles/.zsh/.zcompdump
 
 # 補完で小文字でも大文字にマッチさせる
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
